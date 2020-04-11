@@ -19,9 +19,9 @@ import com.jeesite.modules.Application;
 @SpringBootTest(classes=Application.class)
 @Rollback(false)
 public class InitFilemanagerData extends com.jeesite.modules.filemanager.db.InitFilemanagerData {
-	
+
 	@Test
-	public void initFilemanagerData() throws Exception{
+	public void initFilemanagerDataStart() throws Exception{
 		createTable();
 		initFilemanagerFolder();
 	}
